@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media App</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="mainSearch">
+        <div class="logo">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+        <form>
+          <input type="search" class="searchInput" placeholder="Search..." />
+        </form>
+      </div>
+
+      <nav class="mainNavigation">
+        <ul class="navigation">
+          <li class="navigationItem">
+            <a href="#"><i class="navIcons fas fa-home"></i></a>
+          </li>
+          <li class="navigationItem">
+            <a href="#"><i class="navIcons fas fa-user"></i></a>
+          </li>
+          <li class="navigationItem">
+            <a href="#"><i class="navIcons fas fa-users"></i></a>
+          </li>
+          <li class="navigationItem">
+            <a href="#"><i class="navIcons fab fa-facebook-messenger"></i></a>
+          </li>
+          <li class="navigationItem">
+            <a href="#"><i class="navIcons fas fa-video"></i></a>
+          </li>
+        </ul>
+      </nav>
+
+      <div>
+        <ul class="links">
+          <li>
+            <a href="#"><i class="fas fa-plus"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-bell"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-caret-down"></i></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <aside class="leftContent">
+        <div class="contentLeftSide">
+          <div class="fbLogo">
+            <a href="#"> <h1>facebook</h1></a>
+          </div>
+
+          <div class="suggestions">
+            <h4 style="margin: 20px 0">Sugestii</h4>
+
+            <ul class="suggestionsContent">
+              <li>
+                <a href="">
+                  <i class="fas fa-user-friends"></i>
+
+                  <span>Prieteni</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  <i class="fas fa-users"></i>
+
+                  <span>Grupuri</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  <i class="fas fa-undo"></i>
+
+                  <span>Amintiri</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  <i class="fas fa-bookmark"></i>
+
+                  <span>Salvate</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  <i class="fab fa-font-awesome-flag"></i>
+
+                  <span>Pagini</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  <i class="fas fa-calendar-alt"></i>
+
+                  <span>Evenimente</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  <i class="fas fa-wifi"></i>
+
+                  <span>Cele mai recente</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  <i class="fas fa-caret-down"></i>
+
+                  <span>Vezi mai mult</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+      <div class="mainContent">
+        <article class="post">
+          <div class="postHeader">
+            <div class="profileUserInfo">
+              <a href="#" class="profileImageClass">
+                <img
+                  src="assets/images/profile.jpg"
+                  alt="User Profile Image"
+                  class="profileImage"
+                />
+              </a>
+              <div class="profileName">
+                <span>Username 1</span>
+                <span class="postInfoDate">06 iun 2022</span>
+              </div>
+            </div>
+
+            <a href="#" class="profileOptions">
+              <i class="fas fa-ellipsis-h"></i>
+            </a>
+          </div>
+
+          <div class="content">
+            <div class="imgWrapper">
+              <img src="assets/images/post.jpg" alt="" class="imgContent" />
+
+              <i class="fas fa-info-circle infoIcon"></i>
+            </div>
+
+            <strong class="postTitle">Title</strong>
+
+            <p class="postDescription">Aceasta este prima mea postare</p>
+          </div>
+
+          <div class="reacts">
+            <div class="likesNumber">
+              <i class="fas fa-thumbs-up"></i>
+              <span><span id="numberOfLikes"></span> likes</span>
+            </div>
+
+            <div class="commentNumber">
+              <i class="fas fa-comment"></i>
+              <span>30 comments</span>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="reactsActions">
+            <ul class="actions">
+              <li class="reactions" id="likeButton">
+                <i class="fas fa-thumbs-up"></i>
+                <span>Like</span>
+              </li>
+
+              <li class="reactions">
+                <i class="fas fa-comment"></i>
+                <span>Comments</span>
+              </li>
+
+              <li class="reactions">
+                <i class="fas fa-share"></i>
+                <span>Share</span>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="post">
+          <div class="postHeader">
+            <div class="profileUserInfo">
+              <a href="#">
+                <img
+                  src="assets/images/profile.jpg"
+                  alt="User Profile Image"
+                  class="profileImage"
+                />
+              </a>
+              <div class="profileName">
+                <span>Username 1</span>
+                <span class="postInfoDate">06 iun 2022</span>
+              </div>
+            </div>
+
+            <a href="#" class="profileOptions">
+              <i class="fas fa-ellipsis-h"></i>
+            </a>
+          </div>
+
+          <div class="content">
+            <div class="imgWrapper">
+              <img src="assets/images/post.jpg" alt="" class="imgContent" />
+
+              <i class="fas fa-info-circle infoIcon"></i>
+            </div>
+
+            <strong class="postTitle">Title</strong>
+
+            <p class="postDescription">Aceasta este prima mea postare</p>
+          </div>
+
+          <div class="reacts">
+            <div class="likesNumber">
+              <i class="fas fa-thumbs-up"></i>
+              <span>15 likes</span>
+            </div>
+
+            <div class="commentNumber">
+              <i class="fas fa-comment"></i>
+              <span>30 comments</span>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="reactsActions">
+            <ul class="actions">
+              <li class="reactions">
+                <i class="fas fa-thumbs-up"></i>
+                <span>Like</span>
+              </li>
+
+              <li class="reactions">
+                <i class="fas fa-comment"></i>
+                <span>Comments</span>
+              </li>
+
+              <li class="reactions">
+                <i class="fas fa-share"></i>
+                <span>Share</span>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="post">
+          <div class="postHeader">
+            <div class="profileUserInfo">
+              <a href="#">
+                <img
+                  src="assets/images/profile.jpg"
+                  alt="User Profile Image"
+                  class="profileImage"
+                />
+              </a>
+              <div class="profileName">
+                <span>Username 1</span>
+                <span class="postInfoDate">06 iun 2022</span>
+              </div>
+            </div>
+
+            <a href="#" class="profileOptions">
+              <i class="fas fa-ellipsis-h"></i>
+            </a>
+          </div>
+
+          <div class="content">
+            <div class="imgWrapper">
+              <img src="assets/images/post.jpg" alt="" class="imgContent" />
+
+              <i class="fas fa-info-circle infoIcon"></i>
+            </div>
+
+            <strong class="postTitle">Title</strong>
+
+            <p class="postDescription">Aceasta este prima mea postare</p>
+          </div>
+
+          <div class="reacts">
+            <div class="likesNumber">
+              <i class="fas fa-thumbs-up"></i>
+              <span>15 likes</span>
+            </div>
+
+            <div class="commentNumber">
+              <i class="fas fa-comment"></i>
+              <span>30 comments</span>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="reactsActions">
+            <ul class="actions">
+              <li class="reactions">
+                <i class="fas fa-thumbs-up"></i>
+                <span>Like</span>
+              </li>
+
+              <li class="reactions">
+                <i class="fas fa-comment"></i>
+                <span>Comments</span>
+              </li>
+
+              <li class="reactions">
+                <i class="fas fa-share"></i>
+                <span>Share</span>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </div>
+      <aside class="rightContent">
+        <div class="contentRightSide">
+          <div class="contacteHeader">
+            <strong>Contacte</strong>
+
+            <div class="contacteHeaderButtons">
+              <i class="fas fa-file-video"></i>
+
+              <i class="fas fa-search"></i>
+
+              <i class="fas fa-ellipsis-h"></i>
+            </div>
+          </div>
+
+          <div class="contactConent">
+            <ul class="contacts">
+              <li>
+                <img src="assets/images/profilepicture.webp" alt="" />
+                <span>Username</span>
+              </li>
+
+              <li>
+                <img src="assets/images/profilepicture.webp" alt="" />
+                <span>Username</span>
+              </li>
+
+              <li>
+                <img src="assets/images/profilepicture.webp" alt="" />
+                <span>Username</span>
+              </li>
+
+              <li>
+                <img src="assets/images/profilepicture.webp" alt="" />
+                <span>Username</span>
+              </li>
+
+              <li>
+                <img src="assets/images/profilepicture.webp" alt="" />
+                <span>Username</span>
+              </li>
+
+              <li>
+                <img src="assets/images/profilepicture.webp" alt="" />
+                <span>Username</span>
+              </li>
+
+              <li>
+                <img src="assets/images/profilepicture.webp" alt="" />
+                <span>Username</span>
+              </li>
+
+              <li>
+                <img src="assets/images/profilepicture.webp" alt="" />
+                <span>Username</span>
+              </li>
+
+              <li>
+                <img src="assets/images/profilepicture.webp" alt="" />
+                <span>Username</span>
+              </li>
+
+              <li>
+                <img src="assets/images/profilepicture.webp" alt="" />
+                <span>Username</span>
+              </li>
+
+              <li>
+                <img src="assets/images/profilepicture.webp" alt="" />
+                <span>Username</span>
+              </li>
+
+              <li>
+                <img src="assets/images/profilepicture.webp" alt="" />
+                <span>Username</span>
+              </li>
+
+              <li>
+                <img src="assets/images/profilepicture.webp" alt="" />
+                <span>Username</span>
+              </li>
+
+              <li>
+                <img src="assets/images/profilepicture.webp" alt="" />
+                <span>Username</span>
+              </li>
+
+              <li>
+                <img src="assets/images/profilepicture.webp" alt="" />
+                <span>Username</span>
+              </li>
+
+              <li>
+                <img src="assets/images/profilepicture.webp" alt="" />
+                <span>Username</span>
+              </li>
+
+              <li>
+                <img src="assets/images/profilepicture.webp" alt="" />
+                <span>Username</span>
+              </li>
+
+              <li>
+                <img src="assets/images/profilepicture.webp" alt="" />
+                <span>Username</span>
+              </li>
+
+              <li>
+                <img src="assets/images/profilepicture.webp" alt="" />
+                <span>Username</span>
+              </li>
+
+              <li>
+                <img src="assets/images/profilepicture.webp" alt="" />
+                <span>Username</span>
+              </li>
+
+              <li>
+                <img src="assets/images/profilepicture.webp" alt="" />
+                <span>Username</span>
+              </li>
+
+              <li>
+                <img src="assets/images/profilepicture.webp" alt="" />
+                <span>Username</span>
+              </li>
+
+              <li>
+                <img src="assets/images/profilepicture.webp" alt="" />
+                <span>Username</span>
+              </li>
+
+              <li>
+                <img src="assets/images/profilepicture.webp" alt="" />
+                <span>Username</span>
+              </li>
+
+              <li>
+                <img src="assets/images/profilepicture.webp" alt="" />
+                <span>Username</span>
+              </li>
+
+              <li>
+                <img src="assets/images/profilepicture.webp" alt="" />
+                <span>Username</span>
+              </li>
+
+              <li>
+                <img src="assets/images/profilepicture.webp" alt="" />
+                <span>Username</span>
+              </li>
+
+              <li>
+                <img src="assets/images/profilepicture.webp" alt="" />
+                <span>Username</span>
+              </li>
+
+              <li>
+                <img src="assets/images/profilepicture.webp" alt="" />
+                <span>Username</span>
+              </li>
+
+              <li>
+                <img src="assets/images/profilepicture.webp" alt="" />
+                <span>Username</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="newMessageButton">
+          <i class="fas fa-edit"></i>
+        </div>
+      </aside>
+    </main>
+  </body>
+  <script src="facebook.js"></script>
+</html>

@@ -1,0 +1,274 @@
+body {
+  margin: 0px;
+}
+
+.menuBar {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  box-sizing: border-box;
+  background-color: #0a1035;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  margin: 0%;
+}
+
+.menuBarButtons {
+  font-style: inherit;
+  font-size: larger;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.acasa {
+  text-decoration: none;
+  padding: 20px;
+  color: white;
+}
+
+.cursuri {
+  text-decoration: none;
+  padding: 20px;
+  color: white;
+}
+
+.certificari {
+  text-decoration: none;
+  padding: 20px;
+  color: white;
+}
+
+.corporate {
+  text-decoration: none;
+  padding: 20px;
+  color: white;
+}
+
+.despre {
+  text-decoration: none;
+  padding: 20px;
+  color: white;
+}
+
+.contact {
+  text-decoration: none;
+  padding: 20px;
+  color: white;
+}
+.acasa:hover {
+  color: #c38c38;
+}
+
+.contact:hover {
+  color: #c38c38;
+}
+
+.cursuri:hover {
+  color: #c38c38;
+}
+
+.certificari:hover {
+  color: #c38c38;
+}
+
+.corporate:hover {
+  color: #c38c38;
+}
+
+.despre:hover {
+  color: #c38c38;
+}
+
+.contact:hover {
+  color: #c38c38;
+}
+
+.underMenu {
+  background-color: #0a1035;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  margin: 0%;
+  padding: 20px;
+  box-sizing: border-box;
+  padding: 30px 200px;
+  left: 0px;
+  right: 0px;
+}
+
+.textContainer > p {
+  font-size: 50px;
+}
+
+.underMenuImage {
+  height: auto;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.logoUnderMenu {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  padding-bottom: 50px;
+}
+
+#veziToateCursurileButton {
+  position: relative;
+  background-color: #3bb34a;
+  text-align: left;
+  border: none;
+  color: white;
+  font-size: large;
+  padding: 10px 40px;
+  border-radius: 30px;
+  margin: auto;
+}
+
+#veziCertificarileButton {
+  color: white;
+  font-size: 18px;
+  padding: 20px;
+}
+
+#veziToateCursurileButton:hover {
+  opacity: 70%;
+}
+
+#veziCertificarileButton:hover {
+  opacity: 70%;
+}
+
+.coursesContainer {
+  background-color: lightgrey;
+  margin: 0px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#coursesButtons {
+  display: flex;
+  justify-content: center;
+}
+#webDevelopmentCourse {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  border: 0;
+  border-radius: 10px;
+  height: 300px;
+  padding: 20px;
+}
+
+#cCourse {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  border: 0;
+  border-radius: 10px;
+  height: 300px;
+  padding: 20px;
+}
+
+#testCourse {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  border: 0;
+  border-radius: 10px;
+  height: 300px;
+  padding: 20px;
+}
+
+#coursesButtons > button {
+  margin: 20px;
+}
+
+#navigationButtons > button {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 0;
+  margin: 10px;
+}
+
+#navigationButtons > button:hover {
+  background-color: #3bb34a;
+}
+
+#veziToateCursurileButton {
+  background-color: #3bb34a;
+  margin: 30px;
+}
+
+.coursesContainerText > h4 {
+  color: grey;
+  margin: 30px;
+  margin-top: 100px;
+}
+
+.coursesContainerText > h1 {
+  font-size: 30px;
+}
+
+.coursesContainerText > p {
+  font-size: 18px;
+}
+
+.coursesContainerParteners > p {
+  margin-top: 50px;
+}
+
+.partenersLogos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.partenersLogos > img {
+  margin: 20px 40px;
+}
+
+.coursesContainerParteners>p{
+  font-size: 20px;
+}
+
+
+.newsletter{
+  background-color: #1E96B3;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 50px;
+  color: white;
+
+}
+
+.newsletter>h1{
+  font-size: 32px;
+}
+
+.newsletter>p{
+  font-size: 18px;
+}
+
+.newsletter>input{
+  text-align: center;
+  margin: auto;
+  box-sizing: border-box;
+  border-radius:30px;
+  font-size: 18px;
+  color: gray;
+  padding: 10px ;
+}

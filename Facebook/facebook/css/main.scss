@@ -1,0 +1,407 @@
+$facebookColor: #4287f5;
+$backgroundColor: #ededed;
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  background-color: $backgroundColor;
+}
+
+
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 90%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 60px;
+  align-items: center;
+  z-index: 1;
+
+  .mainSearch {
+    display: flex;
+    align-items: center;
+
+    .logo {
+      padding: 20px;
+
+      .fa-facebook {
+        width: 55px;
+        height: 55px;
+        font-size: 35px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20%;
+      }
+    }
+
+    .searchInput {
+      display: block;
+      height: 35px;
+      border-radius: 20px;
+      padding: 0 15px;
+      background-color: $backgroundColor;
+    }
+  }
+
+  .mainNavigation{
+    .navigation {
+      display:flex;
+
+      .navigationItem{
+
+        .navIcons {
+          font-size: 35px;
+          width: 55px;
+          height: 55px;
+          color: black;
+          border-radius: 20%;
+          margin: 10px;
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+          padding:10px;
+        }
+      }
+    }
+  }
+  
+
+  .links {
+    display: flex;
+  }
+}
+
+.logo .fa-facebook:hover {
+  background-color: $backgroundColor;
+}
+
+.navigationItem>a{
+  display: flex;
+}
+
+
+
+
+
+.navIcons:hover {
+  background-color: $backgroundColor;
+}
+
+.navIcons:active{
+  color: facebookColor ;
+}
+
+
+
+.links > li > a > i {
+  font-size: 35px;
+  width: 55px;
+  height: 55px;
+  color: black;
+  border-radius: 20%;
+  margin: 10px;
+  text-align: center;
+  padding: 10px;
+}
+
+.links > li > a > i:hover {
+  background-color:$backgroundColor ;
+}
+
+.links > li > a > i:active{
+  color: facebookColor;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+
+  .leftContent  {
+    background-color: $backgroundColor;
+    width: 70%;
+    height: auto;
+  }
+
+  .rightContent{
+    background-color: $backgroundColor;
+    width: 70%;
+    height: auto;
+  }
+
+  .mainContent {
+    width: 100%;
+    height: 900px;
+    padding: 20px 0;
+    margin: 20px 150px;
+
+    .post {
+      box-shadow: 5px 5px 5px 5px #888;
+      border-radius: 15px;
+      background-color: white;
+      margin-bottom:30px ;
+
+      .postHeader {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+
+        .profileUserInfo {
+          display: flex;
+
+          .profileName {
+            display: flex;
+            flex-direction: column;
+          }
+
+          .profileImageClass{
+            .profileImage {
+              width: 50px;
+              border-radius: 50%;
+            }
+          }
+        }
+        
+      }
+    }
+  }
+}
+ 
+.profileOptions{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  
+}
+
+.profileOptions:hover{
+    background-color: $backgroundColor ;
+    border-radius: 50px;
+}
+
+.postInfoDate {
+  font-size: 10px;
+}
+
+.imgContent {
+  max-width: 100%;
+  z-index: -1;
+}
+
+.imgWrapper {
+  position: relative;
+}
+
+.infoIcon {
+  position: absolute;
+  bottom: -15px;
+  right: 15px;
+  color: white;
+  background-color: gray;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.postDescription {
+  padding: 15px;
+}
+
+.postTitle {
+  padding-left: 15px;
+}
+
+.reacts {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  color:#717175 ;
+}
+
+.reacts > div > span:hover {
+  text-decoration: underline;
+}
+
+.reacts > div > span {
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  margin: 10px 0;
+}
+
+.reactions {
+  cursor: pointer;
+  color: #717175;
+  width: auto;
+  margin: auto;
+  padding: 2px;
+  
+}
+
+.reactions:hover{
+  background-color:$backgroundColor ;
+  border-radius: 20px;
+  width: auto;
+
+  
+}
+
+.rightContent {
+  padding-left: 75px;
+  
+}
+
+
+
+.leftContent {
+  padding-right: 75px;
+}
+
+.contacteHeader {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  color: gray;
+  align-items: center;
+}
+
+.contacteHeader > strong {
+  color: black;
+}
+
+.contacteHeaderButtons > i {
+  padding: 10px;
+  color: gray;
+}
+
+.contacteHeaderButtons > i:hover {
+  background-color: #c4c8cf;
+  border-radius: 100px;
+}
+
+
+
+.contacts > li {
+  display: flex;
+  margin: 10px;
+  padding: 5px;
+  align-items: center;
+}
+
+.contacts > li:hover {
+  background-color: #c4c8cf;
+  border-radius: 10px;
+}
+
+.contacts > li > img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  background-color: white;
+  border-radius: 50px;
+  position: relative;
+}
+
+.conacts > li > i {
+  position: absolute;
+  z-index: 2;
+}
+
+.contacts > li > span {
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+.newMessageButton{
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  padding: 5px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.newMessageButton:hover{
+  background-color: #e9e9f2;
+}
+
+.leftContent{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fbLogo{
+  color: $facebookColor;
+}
+
+
+.suggestionsContent{
+  padding: 0;
+   
+}
+
+.suggestionsContent>li{
+  padding: 15px 0px;
+  box-sizing: border-box;
+  display: flex;
+  width: 350px;
+}
+
+.suggestionsContent>li:hover{
+  background-color:#c4c8cf ;
+  border-radius: 20px;
+}
+
+.suggestionsContent>li>a>i{
+  margin-right: 5px;
+  margin-left: 5px;
+  
+}
+
+.contentLeftSide{
+  position: fixed;
+}
+
+.contentRightSide{
+  position: fixed;
+  width: 430px;
+  
+}
