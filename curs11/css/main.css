@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  html {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  img {
+      display: block;
+      max-width: 90%;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    background-color: darkgrey;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 60px;
+    align-items: center;
+  }
+  
+  .mainSearch {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    padding: 10px;
+  }
+  
+  .logo .fa-facebook {
+    width: 35px;
+    height: 35px;
+    font-size: 35px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+  
+  .logo .fa-facebook:hover {
+    background-color: darkblue;
+  }
+  
+  .searchInput {
+    display: block;
+    height: 35px;
+    border-radius: 20px;
+    padding: 0 15px;
+  }
+  
+ 
+  
+  .navigation {
+    display: flex;
+  }
+  
+  .navIcons {
+    font-size: 35px;
+    width: 35px;
+    height: 35px;
+    color: blue;
+    border-radius: 50%;
+    margin: 0 10px;
+  }
+  
+  .navIcons:hover {
+      background-color: darkblue;
+  }
+  
+  .links {
+    display: flex;
+  }
+  
+  .links > li > a > i {
+    font-size: 35px;
+    width: 35px;
+    height: 35px;
+    color: blue;
+    border-radius: 50%;
+    margin: 0 10px;
+  }
+  
+  .links > li > a > i:hover {
+      background-color: darkblue;
+  }
+  
+  main {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 60px;
+  }
+  
+  .leftContent, .rightContent {
+      background-color: grey;
+      width: 200px;
+      height: 900px;
+  }
+  
+  .mainContent {
+      border: 1px solid red;
+      width: 600px;
+      
+  }
+
+  .post{
+    box-shadow: 5px 5px 5px 5px #888888;
+  }
+  
+  .postHeader {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .profileName {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .profileOptions{
+      margin-right: 25px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+  }
+
+  .profileOptions:hover{
+      background-color: gray;
+     
+      
+  }
+  
+  .profileImage {
+      width: 50px;
+      border-radius: 50%;
+  }
+  
+  .postInfoDate {
+      font-size: 10px;
+  }
+  
+
+
+  .profileUserInfo{
+    display: flex;
+    justify-content: space-between;
+    }
+
+    .imgWrapper{
+        
+    }
+
+    .infoIcon {
+        cursor: pointer;
+        background: grey;
+        color: white;
+        position: absolute;
+        bottom: -15px;
+        right: 20px;
+        font-size: 28px;
+        border-radius: 50px;
+        border: 1px solid black;
+      }
+
+  .imgContent{
+     max-width: 100%;
+  }
+
+                   
+  .postDescription , .postTitle{
+      padding: 10px;
+  }
+
+  .reacts{
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .reacts .reactCount{
+   cursor:pointer;
+}
+
+  .reacts .reactCount:hover{
+      text-decoration: underline;
+  }
+
+.actions{
+    display: flex;
+    justify-content:space-around ;
+    margin:15px 0;
+}
+
+.reaction{
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.reaction:hover{
+    background-color: lightcyan;
+    border-radius: 20px;
+    padding: 5px;
+}
+
